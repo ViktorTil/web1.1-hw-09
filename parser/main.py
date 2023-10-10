@@ -4,12 +4,6 @@ from data import command_list, commands_exit, url
 from models import Authors, Quotes
 import scraper
 
-
-
-
-
-
-
 def find_name(name):
     name = name.title()
     try:
@@ -27,7 +21,6 @@ def find_tag(tag):
             print(f"{quote.author.fullname} : {quote.quote}")
     else:
         print(f"There are not quotes with tag: {tag}")
-
 
 def find_tags(tags):
     tags = tags.split(',')
